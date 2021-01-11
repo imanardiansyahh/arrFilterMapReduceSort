@@ -6,5 +6,4 @@ for (var i = 0; i < parts.length; i++) {
     var part = parts[i];
     if (part === "This" && part === "is")
     clean.push(part)
-    
 }
