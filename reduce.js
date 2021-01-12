@@ -45,10 +45,18 @@ const characterByEyeColor = characters.reduce((acc, cur) => {
   if (acc[color]) {
     acc[color]++;
   } else {
-    acc[color] = 1;
+    acc[color] = 1 ;
   }
   return acc
-}, []);
+}, {});
 console.log(characterByEyeColor);
 
+
 // Get the total number of characters by eye color (hint. a map of eye color to count)
+const totalNameCharacters = characters.reduce((acc, cur) => acc + cur.name.length,0)
+console.log(totalNameCharacters)
+
+// const arr = []
+// arr['wasd'] = 123
+// arr['asd'] = 321
+// console.log(arr)
